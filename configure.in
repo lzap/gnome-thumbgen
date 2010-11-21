@@ -1,12 +1,16 @@
+AC_CONFIG_MACRO_DIR([m4])
 AC_INIT(src/gnome-thumbgen.py)
 AM_INIT_AUTOMAKE(gnome-thumbgen, 1.0)
+m4_include([m4/ax_python_module.m4])
 
 AM_MAINTAINER_MODE
 
-AM_PATH_PYTHON
+AM_PATH_PYTHON([2.5])
 
 AC_SUBST(PYGTK_CFLAGS)
 AC_SUBST(PYGTK_LIBS)
+
+AX_PYTHON_MODULE([PIL],[Fatal])
 
 AC_OUTPUT([
 Makefile
