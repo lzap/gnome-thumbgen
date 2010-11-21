@@ -1,0 +1,21 @@
+Gnome thumbnail generator
+
+https://github.com/lzap/gnome-thumbgen
+
+Usage: gnome-thumbgen.py [-lnvdf] dir [dir, ...]
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -o DIR, --output=DIR  output directory (default: ~/.thumbnails)
+  -p STRIP_NUM          strip n elements from the beginning of the path
+  -x DIR, --prefix=DIR  add directory to the beginning of the path
+  -e REGEXP, --extensions=REGEXP
+                        accepted image extensions regular expression (default:
+                        jpe?g|png|gif)
+  -l, --skip-large      do not create large (256x256) thumbnails
+  -n, --no-check        do not check for file existence
+  -f, --force           do not comapre file modification time forcing rewrite
+                        all thumbnails
+  -v, --verbose         print additional information during processing
+  -d, --debug           print debugging information
