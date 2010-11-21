@@ -8,7 +8,7 @@ from optparse import OptionParser
 from PIL import Image
 
 def main():
-    parser = OptionParser(usage="%prog [-p] [-e] dir", version="%prog 1.0")
+    parser = OptionParser(usage="%prog [-lnvdf] dir [dir, ...]", version="%prog 1.0")
 
     parser.add_option("-o", 
                       "--output",
