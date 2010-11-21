@@ -1,0 +1,14 @@
+AC_INIT(src/gnome-thumbgen.py)
+AM_INIT_AUTOMAKE(gnome-thumbgen, 1.0)
+
+AM_MAINTAINER_MODE
+
+AM_PATH_PYTHON
+
+AC_SUBST(PYGTK_CFLAGS)
+AC_SUBST(PYGTK_LIBS)
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+])
