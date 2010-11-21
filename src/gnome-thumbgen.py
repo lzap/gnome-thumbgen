@@ -147,7 +147,7 @@ def create_thumbnail(source, target, hashsource, size, debug, force):
         im.thumbnail(size, Image.ANTIALIAS)
         if debug:
             sys.stderr.write('creating: ' + target + "\n")
-        im.save(target, "PNG")
+        im.save(target, optimize=1)
     else:
         if debug:
             sys.stderr.write('up to date: ' + target + "\n")
